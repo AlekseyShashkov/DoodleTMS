@@ -7,9 +7,9 @@ public class UIManager : MonoBehaviour
 { 
     [SerializeField] private TextMeshProUGUI _scoreText = null;
     [SerializeField] private TextMeshProUGUI _startText = null;
+    private int _score = 0;
 
     public static UIManager Instance = null;
-    private int _score = 0;
 
     void Awake() => Instance = this;
 

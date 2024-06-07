@@ -21,4 +21,10 @@ public class Bounce : MonoBehaviour
             }
         }
     }
+
+    void OnBecameInvisible()
+    {
+        transform.position = new Vector2(Random.Range(-2f, 5f), transform.position.y + (14f + Random.Range(0.5f, 1f)));
+        _isScore = true;
+    }
 }
